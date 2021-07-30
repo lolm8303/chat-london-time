@@ -1,12 +1,12 @@
 {
-    "name": "Chat Time - Dubi",
+    "name": "Chat Time - London",
 
     "browser_action": {
         "default_icon" : "clock.png"
       },
     
-    "description": "Know the exact time in Dubai",
-    "version": "1.69",
+    "description": "Know the exact time in London",
+    "version": "0.69",
     "manifest_version": 2,
     "content_scripts": [
         {
