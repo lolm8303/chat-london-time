@@ -1,0 +1,18 @@
+{
+    "name": "Chat Time - Dubi",
+
+    "browser_action": {
+        "default_icon" : "clock.png"
+      },
+    
+    "description": "Know the exact time in Dubai",
+    "version": "1.69",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["*://mail.google.com/chat/*"],
+            "js": ["script.js"],
+            "css": ["style.css"]
+        }
+    ]
+}
