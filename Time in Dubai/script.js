@@ -30,7 +30,7 @@ function setTime() {
     var time = document.getElementById('time')
    
     
-    fetch('https://dev.virtualearth.net/REST/v1/timezone/25.2048,55.2708?key=Ano8kAy6TurmjN2Q6vooNpuB5Ljr95_EaQaMb5mZBx-9l2TGIXC0OT6ygZ_AQsB7')
+    fetch('https://dev.virtualearth.net/REST/v1/timezone/london?key=Ano8kAy6TurmjN2Q6vooNpuB5Ljr95_EaQaMb5mZBx-9l2TGIXC0OT6ygZ_AQsB7')
   .then(response => response.json())
   .then(json => {
     var date = new Date(json['resourceSets'][0]['resources'][0]['timeZone']['convertedTime']['localTime'])
@@ -44,7 +44,7 @@ function setTime() {
     }
     
     min = min < 10 ? `0${min}` : min
-    time.innerText = `Time in Dubai is ${hour}:${min} ${unit}`
+    time.innerText = `Time in London is ${hour}:${min} ${unit}`
   })
   .catch(() => {
       return
